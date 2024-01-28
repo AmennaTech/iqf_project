@@ -1,0 +1,42 @@
+#confirmation-form {
+    background-color: #2a2a2a; /* Cor de fundo para os formulários e seções */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+#confirmation-form input[type="text"] {
+    width: calc(100% - 40px); /* Subtrai o padding para a largura total */
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4a90e2;
+    color: #000;
+}
+
+#confirmation-form button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#confirmation-form button:hover {
+    background-color: #357abd;
+}
+
+/* Estilo para as tags p e span para os detalhes do usuário */
+#confirmation-form p {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+#confirmation-form span {
+    font-weight: bold;
+}

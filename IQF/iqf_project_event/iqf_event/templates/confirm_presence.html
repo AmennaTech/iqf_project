@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmar Presença</title>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div>
+        <h1>Confirmar Presença</h1>
+        <form id="confirmation-form" method="post">
+            {% csrf_token %}
+            <div style="width: 500px" id="qr-reader"></div>
+            <input type="text" id="custom_id" name="custom_id">
+            <p>Nome: <span id="full-name"></span></p>
+            <p>CPF: <span id="cpf"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <button type="submit">Confirmar Entrada</button>
+        </form>
+    </div>
+    <script src="{% static 'js/confirm_presence.js' %}"></script>
+</body>
+</html>
